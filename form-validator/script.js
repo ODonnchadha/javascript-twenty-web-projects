@@ -78,19 +78,19 @@ const controller = (function(ux) {
   const addEventListeners = function() {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+
       ux.validateRequiredFields([username, email, password1, password2]);
       ux.validateFieldLength(username, USERNAME_MIN_LENGTH, USERNAME_MAX_LENGTH);
       ux.validateFieldLength(password1, PASSWORD_MIN_LENGTH, PASSWORD_MAX_LENGTH);
       ux.validateEmail(email);
       ux.validatePasswordMatch(password1, password2);
-    })}
+  })}
 
-    return {
-      init: function() {
-        addEventListeners();
-      }
+  return {
+    init: function() {
+      addEventListeners();
     }
-
+  }
 })(ux);
 
 controller.init();
