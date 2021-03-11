@@ -2,8 +2,6 @@
 
 - Culled from an UDEMY class entitled "Twenty Web Projects With Vanilla JavaScript."
 
-- 01 Introduction:
-
   - Setup: No frameworks or compilers. Straight HTML, CSS, and JavaScript.
   - VSCode. Extensions: (a) Prettier. (b) Emmet (Included in VSCode.)
   - Auto Rename Tag.
@@ -11,8 +9,28 @@
   - JavaScript (ES6) code snippets.
   - Live Server.
 
-- 02 Form Validator & Intro Project:
+- HTML
+
+- CSS
+
   - Styles: Flexbox and the grid in a few projects.
-  - Error Message, for example
+
+  ````css
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   - display: none (This will collapse anything around it.)
   - visibility: hidden (this will simply "hide" the elements.)
+  ```css
+    * {
+    box-sizing: border-box;
+  }
+  ````
+
+  -- Horizontal: display: flex;
+  -- perspective: 1000px; We used this to tilt the "screen" inward.
+
+- JAVASCRIPT
